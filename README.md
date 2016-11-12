@@ -1,6 +1,7 @@
 # cvFeatures
 publishing the main features from http://frazerk.net/resume.html
 
+Please note, these files are for demonstration and are not bundled. They need to be included in a working app to run.
 
 features:
 
