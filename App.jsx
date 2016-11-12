@@ -64,13 +64,17 @@ class App extends React.Component {
 
  
 
-
   changePage(page){
     this.setState({pageSelected: page,});
     document.getElementById(page).scrollIntoView(true);
-    this.offsetAnchor();
+    if(this.state.width>829){
+      this.offsetAnchor();  
+    }else{
+      window.scrollTo(window.scrollX, window.scrollY - 10);
+    }
   }
-  offsetAnchor() {
+
+    offsetAnchor() {
         window.scrollTo(window.scrollX, window.scrollY - 62);
   }
 
